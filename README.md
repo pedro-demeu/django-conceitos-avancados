@@ -4,7 +4,10 @@
     Aprendendo a lidar com Class Based Views(CBV), formulários CBV,
     Contexts, Models  e boas práticas, será utilizado o PostgreSQL
     <br>
-    Está implementado em: ...
+    Está implementado em: https://fusion-demeusoftware.herokuapp.com/
+    Admin
+    Usuário: pedro
+    Senha: root
 </p>
 
 ### Features
