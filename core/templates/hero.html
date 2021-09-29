@@ -21,4 +21,14 @@
         </div> 
     </div> 
 </div>
+<div class="container mt-4 pt-4">
+    {% if messages %}
+        {% for m in messages %}
+            <div class="alert alert-{{m.tags}}">
+                <button class="close" type="button" data-dismiss="alert"></button>
+                <strong>{{m}}</strong>
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
 </header>

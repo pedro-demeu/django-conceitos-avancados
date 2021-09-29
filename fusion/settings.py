@@ -121,7 +121,18 @@ USE_L10N = True
 
 USE_TZ = True
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+"""
+    PRODUÇÃO: 
+
+    
+    EMAIL_HOST = 'localhost'
+    EMAIL_HOST_USER = 'no-reply@seudominio.com.br'
+    EMAIL_PORT = 587
+    EMAIL_USER_TSL = True
+    EMAIL_HOST_PASSWORD = 'sua-senha' 
+"""
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
