@@ -9,9 +9,10 @@
 
 ### Features
 
-- [ ] x 
-
-- [ ] Produção Heroku
+- [x] Class Based View 
+- [x] Envio de E-mail
+- [x] Conceitos de Herança 
+- [x] Produção Heroku
 
 MIT License
 
