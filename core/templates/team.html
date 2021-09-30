@@ -8,27 +8,29 @@
     <div class="row">
        
             <!-- Team Item Starts -->
-            {% for f in funcionarios %}
-            <div class="col-lg-6 col-md-12 col-xs-12">
-                <div class="team-item wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="team-img">
-                    <img class="img-fluid" src="{{f.imagem.thumb.url}}" alt="{{f.nome}}">
-                    </div>
-                    <div class="contetn">
-                    <div class="info-text">
-                        <h3><a href="#">{{f.nome}}</a></h3>
-                        <p>{{f.cargo}}</p>
-                    </div>
-                    <p>{{f.biografia}}</p>
-                    <ul class="social-icons">
-                        <li><a href="{{ f.facebook}}"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
-                        <li><a href="{{ f.twitter}}"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
-                        <li><a href="{{ f.instagram}}"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
-                    </ul>
+            {% if funcionarios %}
+                {% for f in funcionarios %}
+                <div class="col-lg-6 col-md-12 col-xs-12">
+                    <div class="team-item wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="team-img">
+                        <img class="img-fluid" src="{{f.imagem.thumb.url}}" alt="{{f.nome}}">
+                        </div>
+                        <div class="contetn">
+                        <div class="info-text">
+                            <h3><a href="#">{{f.nome}}</a></h3>
+                            <p>{{f.cargo}}</p>
+                        </div>
+                        <p>{{f.biografia}}</p>
+                        <ul class="social-icons">
+                            <li><a href="{{ f.facebook}}"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
+                            <li><a href="{{ f.twitter}}"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
+                            <li><a href="{{ f.instagram}}"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
+                        </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            {% endfor %}         
+                {% endfor %}  
+            {% endif %}       
         
     </div>
     </div>
